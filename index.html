@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Hour</title>
+</head>
+<body>
+    <header>
+        <h1>Multimedia Webpage</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Our Contact Persons</h2>
+            <ol type="I">
+                <li>Lucy Wairimu</li>
+                <li>Thomas Sankara</li>
+                <li>Francisca Obiero</li>
+                <li>Menza Mekatilili</li>
+                <li>Judith Aguttu</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>HTML Image</h2>
+            <img src="https://images.pexels.com/photos/1212600/pexels-photo-1212600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Beautiful Sunset" width="500">
+        </section>
+
+        <section>
+            <h2>Contact Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lucy Wairimu</td>
+                        <td>Limuru</td>
+                        <td>0718786880</td>
+                        <td>wairimu.lucy@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Thomas Sankara</td>
+                        <td>Westlands</td>
+                        <td>0720093890</td>
+                        <td>tomsankara@yahoo.com</td>
+                    </tr>
+                    <tr>
+                        <td>Francisca Obiero</td>
+                        <td>Kigali</td>
+                        <td>0740081016</td>
+                        <td>obierofrancisca@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Menza Mekatilili</td>
+                        <td>Taita</td>aita</td>
+                        <td>0745637282</td>
+                        <td>mekatilili.menza@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Judith Aguttu</td>
+                        <td>Mungatsi</td>
+                        <td>0700489028</td>
+                        <td>jud.aguttu@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Registration Form</h2>
+            <form action="/submit-form" method="post">
+                <fieldset>
+                    <legend>User Registration</legend>
+
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8"><br><br>
+
+                    <label for="date">Date of Birth:</label><br>
+                    <input type="date" id="date" name="date" required><br><br>
+
+                    <label for="country">Country:</label><br>
+                    <select id="country" name="country">
+                        <option value="ke">Kenya</option>
+                        <option value="ug">Uganda</option>
+                        <option value="rw">Rwanda</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="us">United States</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
+
+                    <p>Gender:</p>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label><br><br>
+
+                    <p>Interests:</p>
+                    <input type="checkbox" id="sports" name="interests" value="sports">
+                    <label for="sports">Sports</label><br>
+                    <input type="checkbox" id="music" name="interests" value="music">
+                    <label for="music">Music</label><br>
+                    <input type="checkbox" id="reading" name="interests" value="reading">
+                    <label for="reading">Reading</label><br><br>
+
+                    <input type="submit" value="Register">
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <h2>Multimedia</h2>
+            <audio controls>
+                <source src="audios/gregorian-chant.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <br>
+            <video width="320" height="240" controls>
+                <source src="videos/sunset.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025</p>
+    </footer>
+</body>
+</html>
